@@ -5,13 +5,15 @@ const squares = () => {
 
     return (
 
-        <div className="squares-main">
-            <span class="loading">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
+        <div className="squares-container">
+            <div className="squares-main">
+                <span class="loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
         </div>
     );
 

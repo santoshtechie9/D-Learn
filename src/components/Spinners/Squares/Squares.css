@@ -1,7 +1,7 @@
 /* ------------------------- */
-*, ::before, ::after {
+/* *, ::before, ::after {
     box-sizing: border-box;
-  }
+  } */
 
   .squares-container{
     --loader-dimension: 80px;

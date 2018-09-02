@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Col, Button, Form, FormGroup, Label, Input, FormText, Card, CardHeader, CardFooter, CardBody, } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, FormText, Card, CardHeader, CardBody } from 'reactstrap';
 import './BasicForm.css';
 
 const basicForm = (props) => {

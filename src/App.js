@@ -23,7 +23,9 @@ class App extends Component {
             <Circles></Circles>
           </Row>
           <Row>
+            <Col>
             <Squares></Squares>
+            </Col> 
           </Row>
           <Row>
             <Dots></Dots>
