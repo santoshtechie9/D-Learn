@@ -1,2 +1,2 @@
-# ReactJS-Components
-ReactJS and bootstrap project with read to use components
+# reactjs-components
+ReactJS and bootstrap project with ready to use components

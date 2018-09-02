@@ -1,0 +1,67 @@
+      
+      .circles-container{
+        --loader-dimension: 80px;
+        --loader-border-width: 6px;
+        margin: 0;
+        /* background: blueviolet; */
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+      }
+
+      .circles-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        width: 100vw;
+        height: 50vh;
+      }
+      
+      .circles-loading,
+      .circles-loading:before,
+      .circles-loading:after{
+        background: transparent;
+        background: transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: #fff;
+        border-width: var(--loader-border-width);
+        
+        animation-name: loader-ring;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+      }
+      
+      .circles-loading{
+        width: var(--loader-dimension);
+        height: var(--loader-dimension);
+        position: relative;
+      }  
+      
+      .circles-loading:before{
+        content: '';
+        width: calc(var(--loader-dimension) - var(--loader-border-width) * 2);
+        height: calc(var(--loader-dimension) - var(--loader-border-width) * 2);
+        position: absolute;
+        margin: 0px;
+        animation-duration: 2s;
+      }
+          
+      .circles-loading:after{
+        content: '';
+        width: calc(var(--loader-dimension) - var(--loader-border-width) * 4);
+        height: calc(var(--loader-dimension) - var(--loader-border-width) * 4);
+        position: absolute;
+        margin: 6px;
+        animation-duration: 1s;
+      }
+      
+      @keyframes loader-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
