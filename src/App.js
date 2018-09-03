@@ -6,6 +6,8 @@ import BasicForm from './components/Forms/BasicForm/BasicForm';
 import Circles from './components/Spinners/Circles/Circles';
 import Dots from './components/Spinners/Dots/Dots';
 import Squares from './components/Spinners/Squares/Squares';
+import Login from './components/Forms/Login/Login';
+import Register from './components/Forms/Register/Register';
 
 class App extends Component {
   render() {
@@ -16,25 +18,13 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to ReactJS Programming</h1>
           </header>
-          {/* <h1> Circles Animations</h1> */}
         </div>
         <div>
-          <Row>
-            <Circles></Circles>
-          </Row>
-          <Row>
-            <Col>
-            <Squares></Squares>
-            </Col> 
-          </Row>
-          <Row>
+          <Circles></Circles>
+            <Login></Login>
             <Dots></Dots>
-          </Row>
-          <Row>
-            <Col sm={{ size: 'auto', offset: 3 }}>
-              <BasicForm></BasicForm>
-            </Col>
-          </Row>
+            <Register></Register>
+            <Squares></Squares>
         </div>
       </div>
     );
