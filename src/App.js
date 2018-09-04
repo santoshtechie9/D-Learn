@@ -19,12 +19,13 @@ class App extends Component {
             <h1 className="App-title">Welcome to ReactJS Programming</h1>
           </header>
         </div>
-        <div>
-          <Circles></Circles>
-            <Login></Login>
-            <Dots></Dots>
-            <Register></Register>
-            <Squares></Squares>
+        <div >
+          <Login></Login>
+          <Circles/>
+          <Register></Register>
+          <Squares></Squares>
+          <BasicForm />
+          <Dots></Dots>
         </div>
       </div>
     );
