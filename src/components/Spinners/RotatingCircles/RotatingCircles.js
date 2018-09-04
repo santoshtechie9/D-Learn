@@ -1,7 +1,7 @@
 import React from 'react';
-import './Circles.css';
+import './RotatingCircles.css';
 
-const circles = (props) => {
+const rotatingCircles = (props) => {
 
     return (
         <div className="circles-container">
@@ -13,4 +13,4 @@ const circles = (props) => {
 
 }
 
-export default circles;
+export default rotatingCircles;

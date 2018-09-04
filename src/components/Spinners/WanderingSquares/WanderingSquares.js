@@ -1,7 +1,7 @@
 import React from 'react';
-import './Squares.css';
+import './WanderingSquares.css';
 
-const squares = () => {
+const wanderingSquares = () => {
 
     return (
 
@@ -19,4 +19,4 @@ const squares = () => {
 
 }
 
-export default squares;
+export default wanderingSquares;

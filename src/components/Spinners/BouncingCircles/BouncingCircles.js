@@ -1,7 +1,7 @@
 import React from 'react';
-import './Dots.css';
+import './BouncingCircles.css';
 
-const dots = (props) => {
+const bouncingCircles = (props) => {
 
     return (
         <div className="dots-main">
@@ -17,4 +17,4 @@ const dots = (props) => {
 
 }
 
-export default dots;
+export default bouncingCircles;

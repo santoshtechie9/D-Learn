@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import { Row, Col } from 'reactstrap';
 import BasicForm from './components/Forms/BasicForm/BasicForm';
-import Circles from './components/Spinners/Circles/Circles';
-import Dots from './components/Spinners/Dots/Dots';
-import Squares from './components/Spinners/Squares/Squares';
+import Circles from './components/Spinners/RotatingCircles/RotatingCircles';
+import Dots from './components/Spinners/BouncingCircles/BouncingCircles';
+import Squares from './components/Spinners/WanderingSquares/WanderingSquares';
+import CubeGrid from './components/Spinners/CubeGrid/CubeGrid';
 import Login from './components/Forms/Login/Login';
 import Register from './components/Forms/Register/Register';
 
@@ -25,6 +26,7 @@ class App extends Component {
           <Register></Register>
           <Squares></Squares>
           <BasicForm />
+          <CubeGrid></CubeGrid>
           <Dots></Dots>
         </div>
       </div>
