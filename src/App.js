@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Row, Col } from 'reactstrap';
 import BasicForm from './components/Forms/BasicForm/BasicForm';
 import Circles from './components/Spinners/RotatingCircles/RotatingCircles';
 import Dots from './components/Spinners/BouncingCircles/BouncingCircles';
