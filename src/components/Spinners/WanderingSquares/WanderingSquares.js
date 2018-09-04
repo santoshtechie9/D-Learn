@@ -7,7 +7,7 @@ const wanderingSquares = () => {
 
         <div className="squares-container">
             <div className="squares-main">
-                <span class="loading">
+                <span className="loading">
                     <span></span>
                     <span></span>
                     <span></span>
