@@ -8,15 +8,15 @@ import Squares from './components/Spinners/WanderingSquares/WanderingSquares';
 import CubeGrid from './components/Spinners/CubeGrid/CubeGrid';
 import Login from './components/Forms/Login/Login';
 import Register from './components/Forms/Register/Register';
+import DefaultHeader from './components/DefaultLayout/DefaultHeader';
 
 class App extends Component {
   render() {
     return (
       <div>
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to ReactJS Programming</h1>
+          <header>
+            <DefaultHeader></DefaultHeader>
           </header>
         </div>
         <div >
