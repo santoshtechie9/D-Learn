@@ -2,17 +2,16 @@
       .circles-container{
         --loader-dimension: 80px;
         --loader-border-width: 6px;
-        margin: 0;
         /* background: blueviolet; */
         background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
       }
-
+      
       .circles-main{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items:center;
-        width: 100vw;
+        width: 100%;
         height: 50vh;
       }
       

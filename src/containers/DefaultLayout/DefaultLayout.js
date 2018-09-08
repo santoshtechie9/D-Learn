@@ -48,12 +48,10 @@ class DefaultLayout extends Component {
             <AppSidebarMinimizer />
           </AppSidebar>
           <main className="main">
-            {/* <AppBreadcrumb appRoutes={routes}/> */}
             {/* <Container fluid> */}
             <Jumbotron></Jumbotron>
-            <Circles></Circles>
-            <Login></Login>
-
+            <Dots></Dots>
+            <Circles></Circles>l
             {/* <Switch>
                 {routes.map((route, idx) => {
                     return route.component ? (<Route key={idx} path={route.path} exact={route.exact} name={route.name} render={props => (
