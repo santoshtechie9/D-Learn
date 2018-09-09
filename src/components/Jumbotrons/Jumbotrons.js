@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row } from 'reactstrap';
 
-import './Jumbotron.css';
+import './Jumbotrons.css';
 
 class Jumbotrons extends Component {
 

@@ -30,6 +30,7 @@ import CubeGrid from '../../components/Spinners/CubeGrid/CubeGrid';
 import Login from '../../components/Forms/Login/Login';
 import Register from '../../components/Forms/Register/Register';
 import Jumbotron from '../../components/Jumbotrons/Jumbotrons';
+import CardDeck from '../../components/Cards/CardDeck/CardDeck';
 
 
 class DefaultLayout extends Component {
@@ -51,6 +52,7 @@ class DefaultLayout extends Component {
             {/* <Container fluid> */}
             <Jumbotron></Jumbotron>
             <Dots></Dots>
+            <CardDeck></CardDeck>
             <Circles></Circles>l
             {/* <Switch>
                 {routes.map((route, idx) => {
