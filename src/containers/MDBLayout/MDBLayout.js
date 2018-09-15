@@ -6,7 +6,7 @@ import { Row, Col, Card, CardImage, CardBody, CardTitle, CardText, Fa } from 'md
 import bigdata from '../../assets/big-data-cat.jpg';
 import nosql from '../../assets/nosql-cat.jpg';
 import programming from '../../assets/programming-cat.jpg';
-import bannerImage from '../../assets/banner-img.jpg';
+import bannerImage from '../../assets/banner-img1.jpg';
 import ContactPageBasic from '../../components/Contact/ContactPageBasic';
 import FooterLayout from './ReactFooterLayout';
 
@@ -26,7 +26,7 @@ class MDBLayout extends Component {
 
                     <View waves >
                         <img src={bannerImage} style={style} className="img-fluid" alt="" />
-                        <Mask overlay="black-light" className="flex-center">
+                        <Mask overlay="black-strong" className="flex-center">
                             <div className="container-fluid d-flex align-items-center justify-content-center h-100">
                                 <div className="row d-flex justify-content-center text-center">
                                     <div className="col-md-10">

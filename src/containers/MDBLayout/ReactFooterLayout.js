@@ -41,16 +41,16 @@ class FooterPage extends React.Component {
 
                 <Container className="text-center text-md-left">
                     <Row>
-                        <Col md="5">
+                        <Col md="3">
                             <h6 className="text-uppercase font-weight-bold mt-3">
-                                <strong>Footer Content</strong>
+                                <strong>DLEARN</strong>
                             </h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={style} />
                             <p>DLEARN is  a decentralized platform for the best online education. We offer self-paced and instructor led online courses.
                                 Here you can find online instructor and also buy and sell online cousers with out intermediaries.</p>
                         </Col>
                         <hr className="clearfix w-100 d-md-none" />
-                        <Col md="2">
+                        <Col md="3">
                             <h6 className="text-uppercase font-weight-bold mt-3">
                                 <strong>Products</strong>
                             </h6>
@@ -63,7 +63,7 @@ class FooterPage extends React.Component {
                             </ul>
                         </Col>
                         <hr className="clearfix w-100 d-md-none" />
-                        <Col md="2">
+                        <Col md="3">
                             <h6 className="text-uppercase font-weight-bold mt-3">
                                 <strong>Userful Links</strong>
                             </h6>
