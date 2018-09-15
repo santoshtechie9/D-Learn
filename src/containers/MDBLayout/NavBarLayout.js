@@ -37,10 +37,10 @@ class NavbarFeatures extends Component {
                                 <NavLink className="nav-link" to="/#popular-courses"><strong>Courses</strong></NavLink>
                             </NavItem>
                             <NavItem >
-                                <NavLink className="nav-link" to="/#contact"><strong>Contact us</strong></NavLink>
+                                <NavLink className="nav-link" to="/#contact"><strong>About us</strong></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to="/#contact"><strong>About us</strong></NavLink>
+                                <NavLink className="nav-link" to="/#contact"><strong>Contact us</strong></NavLink>
                             </NavItem>
                         </NavbarNav>
                         <NavbarNav right>

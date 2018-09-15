@@ -30,7 +30,7 @@ class MDBLayout extends Component {
                             <div className="container-fluid d-flex align-items-center justify-content-center h-100">
                                 <div className="row d-flex justify-content-center text-center">
                                     <div className="col-md-10">
-                                        <h2 className="display-4 font-weight-bold white-text pt-5 mb-2">Learn</h2>
+                                        <h2 className="display-4 font-weight-bold white-text pt-5 mb-2">DLearn</h2>
                                         <hr className="hr-light" />
                                          <h4 className="white-text my-4">Develop a passion for learning. If you do, you will never cease to grow.</h4>
                                         <button type="button" className="btn btn-outline-white">Read more<i className="fa fa-book ml-2"></i></button>
