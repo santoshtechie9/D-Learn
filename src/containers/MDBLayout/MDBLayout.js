@@ -8,7 +8,7 @@ import nosql from '../../assets/nosql-cat.jpg';
 import programming from '../../assets/programming-cat.jpg';
 import bannerImage from '../../assets/banner-img.jpg';
 import ContactPageBasic from '../../components/Contact/ContactPageBasic';
-import FooterLayout from './FooterLayout';
+import FooterLayout from './ReactFooterLayout';
 
 class MDBLayout extends Component {
 
@@ -16,7 +16,7 @@ class MDBLayout extends Component {
 
         const style = {
             width: "100%",
-            height: '795px',
+            height: '600px',
         };
 
         return (
@@ -31,8 +31,8 @@ class MDBLayout extends Component {
                                 <div className="row d-flex justify-content-center text-center">
                                     <div className="col-md-10">
                                         <h2 className="display-4 font-weight-bold white-text pt-5 mb-2">Learn</h2>
-                                        <hr className="hr-light" />>
-                                         <h4 className="white-text my-4">Learning may be painful but monotony will kill you. Explore new technology.</h4>
+                                        <hr className="hr-light" />
+                                         <h4 className="white-text my-4">Develop a passion for learning. If you do, you will never cease to grow.</h4>
                                         <button type="button" className="btn btn-outline-white">Read more<i className="fa fa-book ml-2"></i></button>
                                     </div>
                                 </div>
