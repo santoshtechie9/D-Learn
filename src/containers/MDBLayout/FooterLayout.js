@@ -11,29 +11,29 @@ class FooterLayout extends Component {
         return (
             <footer className="page-footer font-small unique-color-dark pt-0 mt-4">
 
-                <div class="primary-color">
-                    <div class="container">
-                        <div class="row py-4 d-flex align-items-center">
+                <div className="primary-color">
+                    <div className="container">
+                        <div className="row py-4 d-flex align-items-center">
 
-                            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                                <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                            <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                <h6 className="mb-0 white-text">Get connected with us on social networks!</h6>
                             </div>
 
-                            <div class="col-md-6 col-lg-7 text-center text-md-right">
-                                <a class="fb-ic ml-0">
-                                    <i class="fa fa-facebook white-text mr-4"> </i>
+                            <div className="col-md-6 col-lg-7 text-center text-md-right">
+                                <a className="fb-ic ml-0">
+                                    <i className="fa fa-facebook white-text mr-4"> </i>
                                 </a>
-                                <a class="tw-ic">
-                                    <i class="fa fa-twitter white-text mr-4"> </i>
+                                <a className="tw-ic">
+                                    <i className="fa fa-twitter white-text mr-4"> </i>
                                 </a>
-                                <a class="gplus-ic">
-                                    <i class="fa fa-google-plus white-text mr-4"> </i>
+                                <a className="gplus-ic">
+                                    <i className="fa fa-google-plus white-text mr-4"> </i>
                                 </a>
-                                <a class="li-ic">
-                                    <i class="fa fa-linkedin white-text mr-4"> </i>
+                                <a className="li-ic">
+                                    <i className="fa fa-linkedin white-text mr-4"> </i>
                                 </a>
-                                <a class="ins-ic">
-                                    <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                                <a className="ins-ic">
+                                    <i className="fa fa-instagram white-text mr-lg-4"> </i>
                                 </a>
                             </div>
 
@@ -46,10 +46,11 @@ class FooterLayout extends Component {
 
                         <div className="col-md-3 col-lg-4 col-xl-3 mb-4">
                             <h6 className="text-uppercase font-weight-bold">
-                                <strong>Company name</strong>
+                                <strong>DLEARN</strong>
                             </h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={style} />
-                            <p>Here you can use rows and columns here to organize your footer content. </p>
+                            <p>DLEARN is  a decentralized platform for the best online education, we offer self-paced and instructor led online courses.
+                                Here you can find online instructor and also buy and sell online cousers with out intermediaries.</p>
                         </div>
 
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -58,16 +59,16 @@ class FooterLayout extends Component {
                             </h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={style} />
                             <p>
-                                <a href="#!">MDBootstrap</a>
+                                <a href="#!">Selp-paced Trainings</a>
                             </p>
                             <p>
-                                <a href="#!">MDWordPress</a>
+                                <a href="#!">Personal Instructors</a>
                             </p>
                             <p>
-                                <a href="#!">BrandFlow</a>
+                                <a href="#!">Online Classrooms</a>
                             </p>
                             <p>
-                                <a href="#!">Bootstrap Angular</a>
+                                <a href="#!">Online Bootcamps</a>
                             </p>
                         </div>
 
@@ -77,16 +78,16 @@ class FooterLayout extends Component {
                             </h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={style} />
                             <p>
-                                <a href="#!">Your Account</a>
+                                <a href="#!">All Courses</a>
                             </p>
                             <p>
                                 <a href="#!">Become an Affiliate</a>
                             </p>
                             <p>
-                                <a href="#!">Shipping Rates</a>
+                                <a href="#!">About us</a>
                             </p>
                             <p>
-                                <a href="#!">Help</a>
+                                <a href="#!">Contact Us</a>
                             </p>
                         </div>
 
@@ -110,7 +111,7 @@ class FooterLayout extends Component {
 
                 <div className="footer-copyright py-3 text-center">
                     © 2018 Copyright:
-                    <a href="#"> Santosh creative works </a>
+                    <a href="/"> Santosh creative works </a>
                 </div>
 
             </footer>

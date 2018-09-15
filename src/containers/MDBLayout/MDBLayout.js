@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
-import BouncingCircles from '../../components/Spinners/BouncingCircles/BouncingCircles';
-import Squares from '../../components/Spinners/WanderingSquares/WanderingSquares';
 import NavbarLayout from './NavBarLayout';
 import { View, Mask } from 'mdbreact';
 import { Carousel, CarouselInner, CarouselItem } from 'mdbreact';
-import { Row, Col, Card, CardImage, CardBody, CardTitle, CardText, Button, Fa } from 'mdbreact';
-import MultiCarouselPage from '../../components/Carousel/MultiCarousel';
+import { Row, Col, Card, CardImage, CardBody, CardTitle, CardText, Fa } from 'mdbreact';
 import bigdata from '../../assets/big-data-cat.jpg';
 import nosql from '../../assets/nosql-cat.jpg';
 import programming from '../../assets/programming-cat.jpg';
-import restApi from '../../assets/restfulapi-cat.jpg';
+import bannerImage from '../../assets/banner-img.jpg';
 import ContactPageBasic from '../../components/Contact/ContactPageBasic';
 import FooterLayout from './FooterLayout';
 
 class MDBLayout extends Component {
+
     render() {
+
+        const style = {
+            width: "100%",
+            height: '795px',
+        };
+
         return (
-            <div className="app ">
-                <header>
+            <div className="app">
+                <header className="mb-5">
                     <NavbarLayout></NavbarLayout>
 
-                    <View waves>
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg" className="img-fluid mh-50" alt="" />
+                    <View waves >
+                        <img src={bannerImage} style={style} className="img-fluid" alt="" />
                         <Mask overlay="black-light" className="flex-center">
                             <div className="container-fluid d-flex align-items-center justify-content-center h-100">
                                 <div className="row d-flex justify-content-center text-center">
@@ -35,12 +39,11 @@ class MDBLayout extends Component {
                             </div>
                         </Mask>
                     </View>
-
                 </header>
 
                 <main className="mt-5">
-                    <div className="container">
 
+                    <div className="container">
                         <section id="popular-courses">
                             <h2 className="mb-5 font-weight-bold text-center">Popular Courses</h2>
                             <Row>
@@ -200,7 +203,6 @@ class MDBLayout extends Component {
 
                         <hr className="my-5" />
                         <section id="contact">
-
                             <h2 className="mb-5 font-weight-bold text-center">Contact us</h2>
                             <ContactPageBasic />
                         </section>
@@ -211,6 +213,7 @@ class MDBLayout extends Component {
                 <  footer>
                     <FooterLayout />
                 </footer>
+
             </div>
         );
     }

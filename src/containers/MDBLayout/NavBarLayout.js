@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,   Container } from 'mdbreact';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Button, Container } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './MDBLayout.css';
 
 class NavbarFeatures extends Component {
     constructor(props) {
@@ -18,37 +19,39 @@ class NavbarFeatures extends Component {
         });
     }
     render() {
+
         return (
             <Router>
-                <Navbar dark expand="lg" fixed="top " scrolling>
+                <Navbar  color="transparent" dark expand="md" fixed="top" scrolling>
                     <Container>
-                        <NavbarBrand href="/">
-                            <strong>DLearn</strong>
-                        </NavbarBrand>
-                        {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
-                        <Collapse isOpen={this.state.collapse} navbar>
-                            <NavbarNav>
-                                <NavItem active>
-                                    <NavLink className="nav-link" to="#">Home</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="#">Courses</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="#">Contact us</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <Dropdown>
-                                        <DropdownToggle nav caret>Dropdown</DropdownToggle>
-                                        <DropdownMenu>
-                                            <DropdownItem href="#">Action</DropdownItem>
-                                            <DropdownItem href="#">Anothercentor Action</DropdownItem>
-                                            <DropdownItem href="#">Something else here</DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
-                                </NavItem>
-                            </NavbarNav>
-                        </Collapse>
+                    <NavbarBrand href="/">
+                        <strong>DLEARN</strong>
+                    </NavbarBrand>
+                    {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
+                    <Collapse isOpen={this.state.collapse} color="blue" navbar>
+                        <NavbarNav left>
+                            <NavItem active>
+                                <NavLink className="nav-link" to="/"><strong>Home</strong></NavLink>
+                            </NavItem>
+                            <NavItem >
+                                <NavLink className="nav-link" to="/#popular-courses"><strong>Courses</strong></NavLink>
+                            </NavItem>
+                            <NavItem >
+                                <NavLink className="nav-link" to="/#contact"><strong>Contact us</strong></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/#contact"><strong>About us</strong></NavLink>
+                            </NavItem>
+                        </NavbarNav>
+                        <NavbarNav right>
+                            <NavItem>
+                                <Button color="white" >Login</Button>
+                            </NavItem>
+                            <NavItem>
+                                <Button color="primary" >Sign In</Button>
+                            </NavItem>
+                        </NavbarNav>
+                    </Collapse>
                     </Container>
                 </Navbar>
             </Router>

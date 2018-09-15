@@ -1,0 +1,13 @@
+
+/* FullPageIntroWithFixedTransparentNavbar.css */
+.navbar {
+  background-color: transparent;
+}
+.top-nav-collapse {
+  background-color: #424f95;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #424f95;
+  }
+}
