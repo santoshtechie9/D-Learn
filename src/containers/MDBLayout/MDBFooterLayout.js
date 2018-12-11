@@ -8,7 +8,6 @@ class FooterPage extends React.Component {
         }
         return (
             <Footer color="stylish-color-dark" className="page-footer font-small pt-0 mt-4">
-
                 <div className="primary-color">
                     <div className="container">
                         <div className="row py-4 d-flex align-items-center">

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Button, Container, FormInline } from 'mdbreact';
-import { Link } from 'react-router-dom';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Button, Container } from 'mdbreact';
 import './MDBLayout.css';
 
 class NavbarFeatures extends Component {
@@ -20,70 +19,52 @@ class NavbarFeatures extends Component {
     }
     render() {
         return (
-            <Navbar color="transparent" dark expand="md" fixed="top" scrolling>
-                <Container>
-                    <NavbarBrand href="/">
-                        <strong>D-LEARN</strong>
-                    </NavbarBrand>
-                    {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
-                    <Collapse isOpen={this.state.collapse} color="blue" navbar>
-                        <NavbarNav left>
-                            <NavItem active>
-                                <NavLink to="/courses">Courses</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink to="/blog">Blog</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink to="/contactus">Contact us</NavLink>
-                            </NavItem>
-                        </NavbarNav>
-                        <NavbarNav right>
-                            <NavItem>
-                                <Link to="/login"><Button color="white">Login</Button></Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link to="/register"><Button color="primary" >Sign Up</Button></Link>
-                            </NavItem>
-                            <NavItem>
-                                <FormInline waves>
-                                    <div className="md-form my-0">
-                                        <input
-                                            className="form-control mr-sm-2"
-                                            type="text"
-                                            placeholder="Search"
-                                            aria-label="Search"
-                                        />
-                                    </div>
-                                </FormInline>
-                            </NavItem>
-                        </NavbarNav>
-
-                        {/* <NavbarNav left>
+            <div >
+                {/* <Router> */}
+                {/* <Navbar color="transparent" dark expand="md" fixed="top" scrolling> */}
+                <Navbar color="mdb-color darken-3" dark expand="md" fixed="top" scrolling>
+                    <Container>
+                        <NavbarBrand href="/">
+                            <strong>D-LEARN</strong>
+                        </NavbarBrand>
+                        {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
+                        <Collapse isOpen={this.state.collapse} color="blue" navbar>
+                            <NavbarNav left>
                                 <NavItem active>
-                                    <NavLink className="nav-link" to="/"><strong>Home</strong></NavLink>
-                                </NavItem>
-                                <NavItem >
-                                    <NavLink className="nav-link" to="/popular-courses"><strong>Courses</strong></NavLink>
-                                </NavItem>
-                                <NavItem >
-                                    <NavLink className="nav-link" to="/#contact"><strong>About us</strong></NavLink>
+                                    <NavLink to="/courses">Courses</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/#contact"><strong>Contact us</strong></NavLink>
+                                    <NavLink to="/blog">Blog</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink to="/contactus">Contact us</NavLink>
                                 </NavItem>
                             </NavbarNav>
                             <NavbarNav right>
                                 <NavItem>
-                                    <Link to="login"><Button color="white">Login</Button></Link>
+                                    <NavLink to="/login"><Button color="white">Login</Button></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <Link to="register"><Button color="primary" >Sign Up</Button></Link>
+                                    <NavLink to="/register"><Button color="primary" >Sign Up</Button></NavLink>
                                 </NavItem>
-                            </NavbarNav> */}
-                    </Collapse>
-                </Container>
-            </Navbar>
+                                <NavItem>
+                                    {/* <FormInline waves>
+                                            <div className="md-form my-0">
+                                                <input
+                                                    className="form-control mr-sm-2"
+                                                    type="text"
+                                                    placeholder="Search"
+                                                    aria-label="Search"
+                                                />
+                                            </div>
+                                        </FormInline> */}
+                                </NavItem>
+                            </NavbarNav>
+                        </Collapse>
+                    </Container>
+                </Navbar>
+                {/* </Router> */}
+            </div>
         );
     }
 }
